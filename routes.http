@@ -1,0 +1,32 @@
+POST http://localhost:3333/livro
+Content-Type: application/json
+
+{
+    "titulo": "equipamentos de pesca",
+    "autor": "motor de pesca(Molinete)",
+    "npaginas": 1000 (pares)
+
+}
+
+###
+
+GET http://localhost:3333/livro
+
+###
+
+GET http://localhost:3333/livro?search=IFMS
+
+###
+
+PUT http://localhost:3333/livro/5aea1252-ee29-4cae-9bc3-04f330403d85
+Content-Type: application/json 
+
+{
+    "titulo": "livro do ifms",
+    "autor": "Autor: felipinho",
+    "npaginas": 100
+}
+
+###
+
+DELETE http://localhost:3333/livro/5aea1252-ee29-4cae-9bc3-04f330403d85
